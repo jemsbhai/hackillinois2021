@@ -1,0 +1,278 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "shape": "Marker",
+        "name": "Origin",
+        "category": "default",
+        "stroke": "",
+        "4 top": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "id": "f1d998f9-d3dc-4c23-9606-f27be5a4b41d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "shape": "Rectangle",
+        "name": "Table 1",
+        "table_size": "2 top",
+        "category": "Table"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0.000386,
+              0
+            ],
+            [
+              0.000386,
+              0.000408
+            ],
+            [
+              0,
+              0.000408
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        ]
+      },
+      "id": "6ef4a040-1cd3-4729-afde-886e57802304"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "shape": "Rectangle",
+        "name": "Table 2",
+        "table_size": "2 top",
+        "category": "Table"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001185,
+              0.000005
+            ],
+            [
+              0.001614,
+              0.000005
+            ],
+            [
+              0.001614,
+              0.000424
+            ],
+            [
+              0.001185,
+              0.000424
+            ],
+            [
+              0.001185,
+              0.000005
+            ]
+          ]
+        ]
+      },
+      "id": "6a719627-4e86-4a19-8b2a-e829abdbc371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "shape": "Rectangle",
+        "name": "Table 3",
+        "table_size": "2 top",
+        "category": "Table"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.002467,
+              0
+            ],
+            [
+              0.002891,
+              0
+            ],
+            [
+              0.002891,
+              0.000418
+            ],
+            [
+              0.002467,
+              0.000418
+            ],
+            [
+              0.002467,
+              0
+            ]
+          ]
+        ]
+      },
+      "id": "01020697-86fa-4f77-9b39-214eac91db5b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "shape": "Rectangle",
+        "name": "Table 4",
+        "table_size": "2 top",
+        "category": "Table"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.003851,
+              0.000021
+            ],
+            [
+              0.004243,
+              0.000021
+            ],
+            [
+              0.004243,
+              0.000392
+            ],
+            [
+              0.003851,
+              0.000392
+            ],
+            [
+              0.003851,
+              0.000021
+            ]
+          ]
+        ]
+      },
+      "id": "7bacacb5-7d95-42a1-8eb8-b2ef5da7e0b1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "shape": "Rectangle",
+        "name": "Table 5",
+        "table_size": "4 top",
+        "category": "Table"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000735,
+              -0.000966
+            ],
+            [
+              0.001185,
+              -0.000966
+            ],
+            [
+              0.001185,
+              -0.000553
+            ],
+            [
+              0.000735,
+              -0.000553
+            ],
+            [
+              0.000735,
+              -0.000966
+            ]
+          ]
+        ]
+      },
+      "id": "2e2e7440-a353-460d-adf4-c290fb818f9a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "shape": "Rectangle",
+        "name": "Table 6",
+        "table_size": "4 top",
+        "category": "Table"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.002177,
+              -0.000966
+            ],
+            [
+              0.002606,
+              -0.000966
+            ],
+            [
+              0.002606,
+              -0.000553
+            ],
+            [
+              0.002177,
+              -0.000553
+            ],
+            [
+              0.002177,
+              -0.000966
+            ]
+          ]
+        ]
+      },
+      "id": "08a0ac35-721f-4866-86f2-3f0e235601cf"
+    }
+  ]
+}
