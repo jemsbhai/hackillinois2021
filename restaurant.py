@@ -5,7 +5,6 @@ Created on Sat Apr 10 03:09:12 2021
 @author: Alice
 """
 
-#import geopandas as gpd
 import pandas as pd
 import json
 from plotly.offline import plot
