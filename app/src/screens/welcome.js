@@ -17,11 +17,7 @@ export default function Welcome() {
         S: require('../assets/fonts/s.ttf'),
 
       });
-    //   useEffect(() => {
-    //     setTimeout(() => {
-    //         navigation.navigate('Login');
-    //     }, 3000);
-    //   },[]);
+
 
       if (!fontLoaded) {
         return null;
@@ -37,9 +33,9 @@ export default function Welcome() {
                 <Text style={{fontFamily:'B', fontSize:35, color:'#FF8533', textAlign:'center'}}>MerryDining</Text>
               </View>
             </View>
-            <TouchableOpacity><View style={{paddingHorizontal:'30%', paddingVertical:'5%', alignSelf:'center', borderRadius:50, backgroundColor:"#FF8533", marginTop:'50%'}}>
+            <TouchableOpacity onPress={()=>navigation.navigate('Signin')}><View style={{paddingHorizontal:'30%', paddingVertical:'5%', alignSelf:'center', borderRadius:50, backgroundColor:"#FF8533", marginTop:'50%'}}>
                   <Text style={{fontFamily:'S', fontSize:17, color:"#FFF", textAlign:'center', textAlignVertical:'center'}}>Sign In</Text></View></TouchableOpacity>
-            <TouchableOpacity><View style={{paddingHorizontal:'17.5%', paddingVertical:'5%', alignSelf:'center', borderRadius:50, borderWidth:2, borderColor:"#FF8533", backgroundColor:"#FFF", marginTop:'5%'}}>
+            <TouchableOpacity onPress={()=>navigation.navigate('Signup')}><View style={{paddingHorizontal:'17.5%', paddingVertical:'5%', alignSelf:'center', borderRadius:50, borderWidth:2, borderColor:"#FF8533", backgroundColor:"#FFF", marginTop:'5%'}}>
                   <Text style={{fontFamily:'S', fontSize:17, color:"#FF8533", textAlign:'center', textAlignVertical:'center'}}>Create an account</Text></View></TouchableOpacity>
         </View>
     );
