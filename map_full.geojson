@@ -4,29 +4,11 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#7e7e7e",
-        "marker-size": "medium",
-        "marker-symbol": "",
-        "shape": "Marker",
-        "name": "Origin",
-        "category": "default"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          0,
-          0
-        ]
-      },
-      "id": "Origin"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "shape": "Rectangle",
         "name": "Table 1",
         "table_size": 4,
-        "category": "Table"
+        "category": "Table",
+		"center": [0.00025, 0.00025],
       },
       "geometry": {
         "type": "Polygon",
@@ -40,7 +22,7 @@
           ]
         ]
       },
-      "id": "Table 1"
+      "id": 1
     },
     {
       "type": "Feature",
@@ -49,7 +31,7 @@
         "name": "Table 2",
         "table_size": 4,
         "category": "Table",
-        "marker-color": ""
+		"center": [0.00125, 0.00025],
       },
       "geometry": {
         "type": "Polygon",
@@ -63,7 +45,7 @@
           ]
         ]
       },
-	  "id": "Table 2"
+	  "id": 2
     },
     {
       "type": "Feature",
@@ -71,7 +53,8 @@
         "shape": "Rectangle",
         "name": "Table 3",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00225, 0.00025],
       },
       "geometry": {
         "type": "Polygon",
@@ -85,7 +68,7 @@
           ]
         ]
       },
-	  "id": "Table 3"
+	  "id": 3
     },
     {
       "type": "Feature",
@@ -93,7 +76,8 @@
         "shape": "Rectangle",
         "name": "Table 4",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00325, 0.00025],
       },
       "geometry": {
         "type": "Polygon",
@@ -107,7 +91,7 @@
           ]
         ]
       },
-	  "id": "Table 4"
+	  "id": 4
     },
     {
       "type": "Feature",
@@ -115,7 +99,8 @@
         "shape": "Rectangle",
         "name": "Table 5",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00425, 0.00025],
       },
       "geometry": {
         "type": "Polygon",
@@ -129,7 +114,7 @@
           ]
         ]
       },
-	  "id": "Table 5"
+	  "id": 5
     },
     {
       "type": "Feature",
@@ -137,7 +122,8 @@
         "shape": "Rectangle",
         "name": "Table 6",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00025, 0.00125],
       },
       "geometry": {
         "type": "Polygon",
@@ -151,7 +137,7 @@
           ]
         ]
       },
-	  "id": "Table 6"
+	  "id": 6
     },
     {
       "type": "Feature",
@@ -159,7 +145,8 @@
         "shape": "Rectangle",
         "name": "Table 7",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00125, 0.00125],
       },
       "geometry": {
         "type": "Polygon",
@@ -173,7 +160,7 @@
           ]
         ]
       },
-	  "id": "Table 7"
+	  "id": 7
     },
     {
       "type": "Feature",
@@ -181,7 +168,8 @@
         "shape": "Rectangle",
         "name": "Table 8",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00225, 0.00125],
       },
       "geometry": {
         "type": "Polygon",
@@ -195,7 +183,7 @@
           ]
         ]
       },
-	  "id": "Table 8"
+	  "id": 8
     },
     {
       "type": "Feature",
@@ -203,7 +191,8 @@
         "shape": "Rectangle",
         "name": "Table 9",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00325, 0.00125],
       },
       "geometry": {
         "type": "Polygon",
@@ -217,7 +206,7 @@
           ]
         ]
       },
-	  "id": "Table 9"
+	  "id": 9
     },
     {
       "type": "Feature",
@@ -225,7 +214,8 @@
         "shape": "Rectangle",
         "name": "Table 10",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00425, 0.00125],
       },
       "geometry": {
         "type": "Polygon",
@@ -239,7 +229,7 @@
           ]
         ]
       },
-	  "id": "Table 10"
+	  "id": 10
     },
     {
       "type": "Feature",
@@ -247,7 +237,8 @@
         "shape": "Rectangle",
         "name": "Table 11",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00025, 0.00225],
       },
       "geometry": {
         "type": "Polygon",
@@ -261,7 +252,7 @@
           ]
         ]
       },
-	  "id": "Table 11"
+	  "id": 11
     },
     {
       "type": "Feature",
@@ -269,7 +260,8 @@
         "shape": "Rectangle",
         "name": "Table 12",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00125, 0.00225],
       },
       "geometry": {
         "type": "Polygon",
@@ -283,7 +275,7 @@
           ]
         ]
       },
-	  "id": "Table 12"
+	  "id": 12
     },
     {
       "type": "Feature",
@@ -291,7 +283,8 @@
         "shape": "Rectangle",
         "name": "Table 13",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00225, 0.00225],
       },
       "geometry": {
         "type": "Polygon",
@@ -305,7 +298,7 @@
           ]
         ]
       },
-	  "id": "Table 13"
+	  "id": 13
     },
     {
       "type": "Feature",
@@ -313,7 +306,8 @@
         "shape": "Rectangle",
         "name": "Table 14",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00325, 0.00225],
       },
       "geometry": {
         "type": "Polygon",
@@ -327,7 +321,7 @@
           ]
         ]
       },
-	  "id": "Table 14"
+	  "id": 14
     },
     {
       "type": "Feature",
@@ -335,7 +329,8 @@
         "shape": "Rectangle",
         "name": "Table 15",
         "category": "Table",
-        "table_size": 4
+        "table_size": 4,
+		"center": [0.00425, 0.00225],
       },
       "geometry": {
         "type": "Polygon",
@@ -349,7 +344,7 @@
           ]
         ]
       },
-	  "id": "Table 15"
+	  "id": 15
     },
 	{
       "type": "Feature",
@@ -357,7 +352,8 @@
         "shape": "Rectangle",
         "name": "Table 16",
         "category": "Table",
-        "table_size": 8
+        "table_size": 8,
+		"center": [0.0025, 0.0045],
       },
       "geometry": {
         "type": "Polygon",
@@ -371,7 +367,7 @@
           ]
         ]
       },
-	  "id": "Table 16"
+	  "id": 16
     },
 	{
       "type": "Feature",
@@ -379,7 +375,8 @@
         "shape": "Rectangle",
         "name": "Table 17",
         "category": "Table",
-        "table_size": 8
+        "table_size": 8,
+		"center": [0.0015, 0.0045],
       },
       "geometry": {
         "type": "Polygon",
@@ -393,7 +390,7 @@
           ]
         ]
       },
-	  "id": "Table 17"
+	  "id": 17
     },  
     {
       "type": "Feature",
@@ -401,7 +398,8 @@
         "shape": "Rectangle",
         "name": "Table 18",
         "category": "Table",
-        "table_size": 8
+        "table_size": 8,
+		"center": [-0.0015, 0.0045],
       },
       "geometry": {
         "type": "Polygon",
@@ -415,7 +413,7 @@
           ]
         ]
       },
-	  "id": "Table 18"
+	  "id": 18
     },
     {
       "type": "Feature",
@@ -423,7 +421,8 @@
         "shape": "Rectangle",
         "name": "Table 19",
         "category": "Table",
-        "table_size": 8
+        "table_size": 8,
+		"center": [-0.0015, 0.0025],
       },
       "geometry": {
         "type": "Polygon",
@@ -437,7 +436,7 @@
           ]
         ]
       },
-	  "id": "Table 19"
+	  "id": 19
     },
     {
       "type": "Feature",
@@ -445,7 +444,8 @@
         "shape": "Rectangle",
         "name": "Table 20",
         "category": "Table",
-        "table_size": 8
+        "table_size": 8,
+		"center": [0.0005, -0.0015],
       },
       "geometry": {
         "type": "Polygon",
@@ -459,7 +459,7 @@
           ]
         ]
       },
-	  "id": "Table 20"
+	  "id": 20
     },
     {
       "type": "Feature",
@@ -467,7 +467,8 @@
         "shape": "Rectangle",
         "name": "Table 21",
         "category": "Table",
-        "table_size": 8
+        "table_size": 8,
+		"center": [0.0025, -0.0015],
       },
       "geometry": {
         "type": "Polygon",
@@ -481,7 +482,7 @@
           ]
         ]
       },
-	  "id": "Table 21"
+	  "id": 21
     },
     {
       "type": "Feature",
@@ -489,7 +490,8 @@
         "shape": "Rectangle",
         "name": "Table 22",
         "category": "Table",
-        "table_size": 8
+        "table_size": 8,
+		"center": [0.0045, -0.0015],
       },
       "geometry": {
         "type": "Polygon",
@@ -503,7 +505,7 @@
           ]
         ]
       },
-	  "id": "Table 22"
+	  "id": 22
     }
   ]
 }
