@@ -1,0 +1,509 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "shape": "Marker",
+        "name": "Origin",
+        "category": "default"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "id": "Origin"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 1",
+        "table_size": 4,
+        "category": "Table"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.000,	0.000],
+            [0.0005,0.000],
+            [0.0005,0.0005],
+            [0.000,	0.0005],
+            [0.000,	0.000]
+          ]
+        ]
+      },
+      "id": "Table 1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 2",
+        "table_size": 4,
+        "category": "Table",
+        "marker-color": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.001,	0.000],
+            [0.0015,0.000],
+            [0.0015,0.0005],
+            [0.001,	0.0005],
+            [0.001,	0.000]
+          ]
+        ]
+      },
+	  "id": "Table 2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 3",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.002,	0.000],
+            [0.0025,0.000],
+            [0.0025,0.0005],
+            [0.002,	0.0005],
+            [0.002,	0.000]
+          ]
+        ]
+      },
+	  "id": "Table 3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 4",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.003,	0.000],
+            [0.0035,0.000],
+            [0.0035,0.0005],
+            [0.003,	0.0005],
+            [0.003,	0.000]
+          ]
+        ]
+      },
+	  "id": "Table 4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 5",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.004,	0.000],
+            [0.0045,0.000],
+            [0.0045,0.0005],
+            [0.004,	0.0005],
+            [0.004,	0.000]
+          ]
+        ]
+      },
+	  "id": "Table 5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 6",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.000,	0.001],
+            [0.0005,0.001],
+            [0.0005,0.0015],
+            [0.000,	0.0015],
+            [0.000,	0.001]
+          ]
+        ]
+      },
+	  "id": "Table 6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 7",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.001,	0.001],
+            [0.0015,0.001],
+            [0.0015,0.0015],
+            [0.001,	0.0015],
+            [0.001,	0.001]
+          ]
+        ]
+      },
+	  "id": "Table 7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 8",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.002,	0.001],
+            [0.0025,0.001],
+            [0.0025,0.0015],
+            [0.002,	0.0015],
+            [0.002,	0.001]
+          ]
+        ]
+      },
+	  "id": "Table 8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 9",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.003,	0.001],
+            [0.0035,0.001],
+            [0.0035,0.0015],
+            [0.003,	0.0015],
+            [0.003,	0.001]
+          ]
+        ]
+      },
+	  "id": "Table 9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 10",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.004,	0.001],
+            [0.0045,0.001],
+            [0.0045,0.0015],
+            [0.004,	0.0015],
+            [0.004,	0.001]
+          ]
+        ]
+      },
+	  "id": "Table 10"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 11",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.000,	0.002],
+            [0.0005,0.002],
+            [0.0005,0.0025],
+            [0.000,	0.0025],
+            [0.000,	0.002]
+          ]
+        ]
+      },
+	  "id": "Table 11"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 12",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.001,	0.002],
+            [0.0015,0.002],
+            [0.0015,0.0025],
+            [0.001,	0.0025],
+            [0.001,	0.002]
+          ]
+        ]
+      },
+	  "id": "Table 12"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 13",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.002,	0.002],
+            [0.0025,0.002],
+            [0.0025,0.0025],
+            [0.002,	0.0025],
+            [0.002,	0.002]
+          ]
+        ]
+      },
+	  "id": "Table 13"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 14",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.003,	0.002],
+            [0.0035,0.002],
+            [0.0035,0.0025],
+            [0.003,	0.0025],
+            [0.003,	0.002]
+          ]
+        ]
+      },
+	  "id": "Table 14"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 15",
+        "category": "Table",
+        "table_size": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.004,	0.002],
+            [0.0045,0.002],
+            [0.0045,0.0025],
+            [0.004,	0.0025],
+            [0.004,	0.002]
+          ]
+        ]
+      },
+	  "id": "Table 15"
+    },
+	{
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 16",
+        "category": "Table",
+        "table_size": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+			[0.002,	0.004],
+            [0.003, 0.004],
+            [0.003, 0.005],
+            [0.002,	0.005],
+            [0.002,	0.004]
+          ]
+        ]
+      },
+	  "id": "Table 16"
+    },
+	{
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 17",
+        "category": "Table",
+        "table_size": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.000,	0.004],
+            [0.001, 0.004],
+            [0.001, 0.005],
+            [0.000,	0.005],
+            [0.000,	0.004]
+          ]
+        ]
+      },
+	  "id": "Table 17"
+    },  
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 18",
+        "category": "Table",
+        "table_size": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-0.002,	0.004],
+            [-0.001,	0.004],
+            [-0.001,	0.005],
+            [-0.002,	0.005],
+            [-0.002,	0.004]
+          ]
+        ]
+      },
+	  "id": "Table 18"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 19",
+        "category": "Table",
+        "table_size": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-0.002,	0.002],
+            [-0.001,	0.002],
+            [-0.001,	0.003],
+            [-0.002,	0.003],
+            [-0.002,	0.002]
+          ]
+        ]
+      },
+	  "id": "Table 19"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 20",
+        "category": "Table",
+        "table_size": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.000,	-0.001],
+            [0.001,	-0.001],
+            [0.001,	-0.002],
+            [0.000,	-0.002],
+            [0.000,	-0.001]
+          ]
+        ]
+      },
+	  "id": "Table 20"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 21",
+        "category": "Table",
+        "table_size": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.002,	-0.001],
+            [0.003,	-0.001],
+            [0.003,	-0.002],
+            [0.002,	-0.002],
+            [0.002,	-0.001]
+          ]
+        ]
+      },
+	  "id": "Table 21"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "shape": "Rectangle",
+        "name": "Table 22",
+        "category": "Table",
+        "table_size": 8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [0.004,	-0.001],
+            [0.005,	-0.001],
+            [0.005,	-0.002],
+            [0.004,	-0.002],
+            [0.004,	-0.001]
+          ]
+        ]
+      },
+	  "id": "Table 22"
+    }
+  ]
+}
