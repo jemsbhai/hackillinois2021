@@ -6,13 +6,13 @@ import { Icon, Rating, AirbnbRating } from 'react-native-elements'
 import { useFonts } from 'expo-font';
 import { ScrollView, TextInput } from 'react-native-gesture-handler';
 import { Chip } from 'react-native-paper';
-import { Avatar } from 'react-native-paper';
+import { Avatar, Switch } from 'react-native-paper';
 
 
 
 
 
-export default function Restaurant() {
+export default function Checkin() {
     const navigation = useNavigation();
     const [fontLoaded] = useFonts({
         B: require('../assets/fonts/b.ttf'),
@@ -21,7 +21,8 @@ export default function Restaurant() {
         S: require('../assets/fonts/s.ttf'),
 
       });
-      
+    const [isSwitchOn, setIsSwitchOn] = React.useState(false);
+    const onToggleSwitch = () => setIsSwitchOn(!isSwitchOn);
       
 
    
@@ -68,15 +69,17 @@ export default function Restaurant() {
             </View>
                 
             </View>
+            <View style={{flexDirection:'row', display:'flex', marginHorizontal:'10%', marginTop:'5%'}}><Switch value={isSwitchOn} color={"#FF8533"} onValueChange={onToggleSwitch} />
+            <Text style={{color:'#9C7569', fontSize:15}}>Pair me with other solo guests</Text></View>
             
             
          
 
             <View style={{flexDirection:'row', display:'flex', marginHorizontal:'5%'}}>
-            <TouchableOpacity onPress={()=>navigation.navigate('Checkin')}><View style={{marginTop:'25%', width:'90%', backgroundColor:'#FF8533', marginLeft:'10%', borderRadius:50, display:'flex', flexDirection:'row'}}>
+            <TouchableOpacity onPress={()=>navigation.navigate('QRCheckin')}><View style={{marginTop:'5%', width:'90%', backgroundColor:'#FF8533', marginLeft:'10%', borderRadius:50, display:'flex', flexDirection:'row'}}>
                 <Text style={{fontFamily:'S', color:'#FFF', fontSize:15, textAlign:'center', marginLeft:'5%', marginVertical:'2.5%', textAlignVertical:'center', paddingVertical:'2.5%'}} >Check-in  </Text><Icon name="arrow-forward-circle" type="ionicon" color="#FFF" size={20} style={{textAlignVertical:'center', marginVertical:'50%'}}></Icon>
             </View></TouchableOpacity>
-            <Text style={{fontFamily:'B', textAlign:'center', fontSize:15, marginTop:'2.5%',color:'#FF8533', textDecorationStyle:'solid', textDecorationLine:'underline', marginLeft:'10%', marginTop:'12.5%'}} onPress={()=>navigation.navigate('Reservation')}>or make a reservation</Text>
+            <Text style={{fontFamily:'B', textAlign:'center', fontSize:15, marginTop:'2.5%',color:'#FF8533', textDecorationStyle:'solid', textDecorationLine:'underline', marginLeft:'10%', marginTop:'5%'}} onPress={()=>navigation.navigate('Signup')}>cancel</Text>
            </View>
 
           

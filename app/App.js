@@ -9,6 +9,10 @@ import Home from './src/screens/home';
 import Dine from './src/screens/dine';
 import Explore from './src/screens/explore';
 import Restaurant from './src/screens/restaurant';
+import Checkin from './src/screens/checkin';
+import QRCheckin from './src/screens/qrcheckin';
+import Reservation from './src/screens/reservation';
+import ReserveQr from './src/screens/reserveqr';
 
 
 
@@ -55,6 +59,27 @@ function MyStack() {
         component={Restaurant} 
         options={{ headerShown: false}} 
       />
+      <Stack.Screen 
+        name="Checkin" 
+        component={Checkin} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="QRCheckin" 
+        component={QRCheckin} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Reservation" 
+        component={Reservation} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="ReserveQR" 
+        component={ReserveQr} 
+        options={{ headerShown: false}} 
+      />
+    
     
     
      
