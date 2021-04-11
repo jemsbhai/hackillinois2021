@@ -38,7 +38,7 @@ export default function Signup() {
                 <TextInput secureTextEntry placeholder="confirm password" style={{fontFamily:'S', fontSize:20, alignSelf:'center', color:'#FF8533', marginTop:'5%',
                 paddingLeft:'5%', textAlign:'left', width:'90%', backgroundColor:'#ffe2cf', borderRadius:20, paddingVertical:'5%', fontWeight:'bold'}} placeholderTextColor="#ff9957"></TextInput>
             </View>
-            <TouchableOpacity onPress={()=>navigation.navigate('#')}><View style={{marginTop:'15%', width:'70%', backgroundColor:'#FF8533', alignSelf:'center', borderRadius:50}}>
+            <TouchableOpacity onPress={()=>navigation.navigate('Home')}><View style={{marginTop:'15%', width:'70%', backgroundColor:'#FF8533', alignSelf:'center', borderRadius:50}}>
                 <Text style={{fontFamily:'B', color:'#FFF', fontSize:15, paddingVertical:'7.5%', textAlign:'center', fontWeight:'bold'}} >Sign up</Text>
             </View></TouchableOpacity>
            

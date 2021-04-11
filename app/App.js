@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Welcome from './src/screens/welcome';
 import Signin from './src/screens/login';
 import Signup from './src/screens/register';
+import Home from './src/screens/home';
 
 
 
@@ -29,6 +30,11 @@ function MyStack() {
       <Stack.Screen 
         name="Signup" 
         component={Signup} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Home" 
+        component={Home} 
         options={{ headerShown: false}} 
       />
     
