@@ -40,34 +40,34 @@ export default function Home() {
                 <Text style={{textAlign:'left', color:"#FF8533",fontSize:25, fontFamily:'S', marginHorizontal:'5%', marginTop:'15%'}}>Hey Malèna, what kind of food do you prefer? </Text>
             </View>
             <View style={{marginHorizontal:'7.5%', marginTop:'5%', flexDirection:'row', display:'flex', flexWrap:'wrap'}}>
-               <View>
+               <TouchableOpacity><View>
                    <Image source={require('../assets/everything.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'10%', fontSize:12}}>Everything</Text>
-                </View>
-                <View>
+                </View></TouchableOpacity>
+                <TouchableOpacity><View>
                    <Image source={require('../assets/vegan.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'15%', fontSize:12}}>Vegan</Text>
-                </View>
-                <View>
+                </View></TouchableOpacity>
+                <TouchableOpacity><View>
                    <Image source={require('../assets/halal.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'15%', fontSize:12}}>Halal</Text>
-                </View>
-                <View>
+                </View></TouchableOpacity>
+                <TouchableOpacity><View>
                    <Image source={require('../assets/fastfood.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'7.5%', fontSize:12}}>Fast Food</Text>
-                </View>
-                <View>
+                </View></TouchableOpacity>
+                <TouchableOpacity><View>
                    <Image source={require('../assets/glutenfree.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'10%', fontSize:12}}>Gluten-free</Text>
-                </View>
-                <View>
+                </View></TouchableOpacity>
+                <TouchableOpacity><View>
                    <Image source={require('../assets/organic.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'10%', fontSize:12}}>Organic</Text>
-                </View>
-                <View>
+                </View></TouchableOpacity>
+                <TouchableOpacity><View>
                    <Image source={require('../assets/kosher.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'15%', fontSize:12}}>Kosher</Text>
-                </View>
+                </View></TouchableOpacity>
                 <View>
                    <Image source={require('../assets/other.png')} style={{height:70, width:70, resizeMode:'contain'}}></Image>
                    <Text style={{fontFamily:'M', marginLeft:'10%', fontSize:12}}>Others</Text>
