@@ -1,24 +1,23 @@
-tables,occupied,diet
-Origin,1,
-Table 1,0,
-Table 2,1,
-Table 3,0,
-Table 4,1,Halal
-Table 5,1,
-Table 6,1,
-Table 7,1,
-Table 8,0,
-Table 9,1,Gluten-free
-Table 10,0,
-Table 11,0,
-Table 12,1,
-Table 13,0,
-Table 14,1,
-Table 15,1,
-Table 16,0,
-Table 17,1,Vegetarian
-Table 18,0,
-Table 19,1,
-Table 20,1,
-Table 21,1,
-Table 22,1,
+table,occupied,diet
+1,1,Vegan
+2,0,
+3,0,
+4,1,Halal
+5,1,
+6,1,
+7,1,
+8,0,
+9,1,Gluten-free
+10,0,
+11,0,
+12,1,
+13,0,
+14,1,
+15,1,
+16,0,
+17,1,Vegetarian
+18,0,
+19,1,
+20,1,
+21,1,
+22,1,
