@@ -17,7 +17,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 from plotly.offline import plot
-from utils import diff_dashtable, get_table_data
+from utils import diff_dashtable, get_table_data, update_table_data
 
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -29,11 +29,6 @@ app.layout = html.Div([
     html.H6("Restaurant View"),
     dcc.Graph(id='choropleth'),
 
-    dcc.Store(id='click-memory', data = {'nmb_clicks': nmb_clicks}),
-    #html.Button('Save', id='save-button', n_clicks=nmb_clicks),
-    # this is a link to home page so that it autorefreshes on click 
-    html.A(html.Button('Save', id='save-button', n_clicks=nmb_clicks),href='/'),
-   
     dcc.Store(id="diff-store"),
     html.P("Changes to DataTable:"),
     html.Div(id="data-diff"),
@@ -73,28 +68,15 @@ def capture_diffs(ts, data, data_previous, diff_store_data):
     if ts is None:
         raise PreventUpdate
     diff_store_data = diff_store_data or {}
-    diff_store_data[ts] = diff_dashtable(data, data_previous, 'tableid')
+    
+    changed_rows = diff_dashtable(data, data_previous, 'tableid')
+    diff_store_data[ts] = changed_rows
     if diff_store_data:
-        dt_changes = []
-        for v in diff_store_data.values():
-            dt_changes.append(f"* {v}")
-        return diff_store_data, [dcc.Markdown(change) for change in dt_changes]
+        for row in changed_rows:
+            update_table_data(row['tableid'], row['status'], row['diet'], row['allergy'])
+        return diff_store_data, str(changed_rows)
+    
     return diff_store_data, "No Changes to DataTable"
-
-
-# write updated info to csv file
-# TO-DO: Get rid of this
-@app.callback(Output('click-memory', 'data'),
-             [Input('save-button', 'n_clicks'),
-              Input('restaurant-table', 'data')],
-             [State('click-memory', 'data')])
-def on_data(click, table_data, data):
-    if click != nmb_clicks:
-        data['nmb_clicks'] = data['nmb_clicks'] + 1
-        df = pd.DataFrame.from_dict(table_data)
-        df.to_csv(os.path.join(os.path.dirname(__file__), 'data.csv'), index=False)
-
-    return data
 
 # create and display restaurant map
 @app.callback(

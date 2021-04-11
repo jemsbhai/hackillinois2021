@@ -30,8 +30,8 @@ def update_table_data(tableid, status, diet, allergy):
     
     payload2 = f"{{\"action\" : \"updatesingletable\","\
                 f"\"id\" : {tableid},"\
-                f"\"diet\" : \"{diet}\","\
                 f"\"status\" :\"{status}\","\
+                f"\"diet\" : \"{diet}\","\
                 f"\"allergy\" :\"{allergy}\"}}"
     headers = {
         'Content-Type': "application/json",
@@ -44,7 +44,7 @@ def update_table_data(tableid, status, diet, allergy):
     return response
     
 
-def diff_dashtable(data, data_previous, row_id_name="row_id"):
+def diff_dashtable(data, data_previous, row_id_name="tableid"):
 
     """Generate a diff of Dash DataTable data.
     CREDIT: https://community.plotly.com/t/detecting-changed-cell-in-editable-datatable/26219/4
@@ -61,24 +61,10 @@ def diff_dashtable(data, data_previous, row_id_name="row_id"):
     A list of dictionaries in form of [{row_id_name:, column_name:, current_value:,
         previous_value:}]
     """
-
     df, df_previous = pd.DataFrame(data=data), pd.DataFrame(data_previous)
     for _df in [df, df_previous]:
         assert row_id_name in _df.columns
         _df = _df.set_index(row_id_name)
     mask = df.ne(df_previous)
-    df_diff = df[mask].dropna(how="all", axis="columns").dropna(how="all", axis="rows")
-    changes = []
-    for idx, row in df_diff.iterrows():
-        row_id = row.name
-        row.dropna(inplace=True)
-        for change in row.iteritems():
-            changes.append(
-                {
-                    row_id_name: row_id,
-                    "column_name": change[0],
-                    "current_value": change[1],
-                    "previous_value": df_previous.at[row_id, change[0]],
-                }
-            )
-    return changes
+    changed_rows = df.loc[df[mask].notnull().any(axis=1), :]
+    return changed_rows.to_dict(orient='records')
