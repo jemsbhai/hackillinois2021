@@ -20,6 +20,7 @@ from plotly.offline import plot
 from utils import diff_dashtable, get_table_data, update_table_data
 
 app = dash.Dash(__name__)
+statuses = ['empty', 'reserved', 'occupied']
 diets = ['none', 'vegan', 'vegetarian', 'gluten-free', 'kosher', 'halal']
 allergies = ['none', 'dairy', 'peanuts', 'soy', 'shellfish']
 def layout_function():
@@ -37,18 +38,12 @@ def layout_function():
         editable=True,
         data=get_table_data().to_dict(orient='records'),
         dropdown={
-            'status': {
-                'options': [
-                    {'label': 'empty', 'value': 'empty'},
-                    {'label': 'reserved', 'value': 'reserved'},
-                    {'label': 'occupied', 'value': 'occupied'}
-                ]
-            },
-            'diet': {
-                'options': [{'label': i, 'value': i} for i in diets]
-            },
-            'allergy': {
-                'options': [{'label': i, 'value': i} for i in allergies]}
+            'status': {'options': [{'label': i, 'value': i} for i in statuses],
+                     'clearable':False},
+            'diet': {'options': [{'label': i, 'value': i} for i in diets],
+                     'clearable':False},
+            'allergy': {'options': [{'label': i, 'value': i} for i in allergies],
+                        'clearable':False}
         }
     ),
 
@@ -77,6 +72,7 @@ def capture_diffs(ts, data, data_previous, diff_store_data):
     changed_rows = diff_dashtable(data, data_previous, 'tableid')
     diff_store_data[ts] = changed_rows
     if diff_store_data:
+        response = []
         for row in changed_rows:
             response = update_table_data(row['tableid'], row['status'], row['diet'], row['allergy'])
         return diff_store_data, str(response)#str(changed_rows)
@@ -97,7 +93,7 @@ def display_choropleth(input_table):
     colorscales = [[0.0, 'rgb(255, 232.05, 214.2)'],
                    [0.5, 'rgb(255, 181.0, 130.1)'],
                    [1.0, 'rgb(255, 132.6, 51.0)']]
-    tickdict = {"empty": 0.0, "reserved": 1.0, "occupied": 2.0}
+    tickdict = {"empty": 0.0, "reserved": 0.9, "occupied": 2.0}
     hover_template_choro="Table %{customdata[0]}" \
                          "<extra>Status: %{customdata[1]}<br>" \
                          "Diet: %{customdata[2]}<br>"\
@@ -121,8 +117,12 @@ def display_choropleth(input_table):
                                   colorbar_x=-0.03,
                                   colorbar_y=0,
                                   colorbar_yanchor="bottom",
-                                  colorbar_title_text="Table Status"))
+                                  colorbar_thickness=10,
+                                  colorbar_tickfont_family="Poppins",
+                                  colorbar_title_text="Table Status",
+                                  colorbar_title_font_family="Poppins"))
     fig.update_layout(dragmode=False,
+                      font_family="Poppins",
                       margin={"r":0,"t":0,"l":0,"b":0})
     fig.update_geos(center=dict(lon=0.002, lat=0.002),
                     lataxis_range=[-0.005, 0.006],
