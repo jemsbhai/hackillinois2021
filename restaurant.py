@@ -20,7 +20,7 @@ from plotly.offline import plot
 from utils import diff_dashtable, get_table_data, update_table_data
 
 app = dash.Dash(__name__)
-diets = ['none', 'vegan', 'vegetarian', 'gluten', 'kosher', 'halal']
+diets = ['none', 'vegan', 'vegetarian', 'gluten-free', 'kosher', 'halal']
 allergies = ['none', 'dairy', 'peanuts', 'soy', 'shellfish']
 def layout_function():
     return html.Div([
