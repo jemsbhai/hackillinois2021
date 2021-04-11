@@ -37,7 +37,7 @@ export default function Home() {
                 <View style={{flexDirection:'row', display:'flex'}}><Icon name="chevron-left" type="entypo" size={30} color="#FF8533"></Icon>
                 <Text style={{textAlign:'justify', color:"#FF8533",fontSize:25, fontFamily:'S'}}>Preferences</Text>
                 </View>
-                <Text style={{textAlign:'justify', color:"#FF8533",fontSize:25, fontFamily:'S', marginHorizontal:'5%', marginTop:'15%'}}>Hey Malèna, what kind of food do you prefer? </Text>
+                <Text style={{textAlign:'left', color:"#FF8533",fontSize:25, fontFamily:'S', marginHorizontal:'5%', marginTop:'15%'}}>Hey Malèna, what kind of food do you prefer? </Text>
             </View>
             <View style={{marginHorizontal:'7.5%', marginTop:'5%', flexDirection:'row', display:'flex', flexWrap:'wrap'}}>
                <View>

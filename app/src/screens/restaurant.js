@@ -12,7 +12,7 @@ import { Avatar } from 'react-native-paper';
 
 
 
-export default function Explore() {
+export default function Restaurant() {
     const navigation = useNavigation();
     const [fontLoaded] = useFonts({
         B: require('../assets/fonts/b.ttf'),
@@ -32,7 +32,7 @@ export default function Explore() {
         return(
             <View style={{borderRadius:30, backgroundColor:'#FFF', elevation:1, width:240, marginRight:15, marginBottom:'5%'}}>
             <Image source={{uri:data.img}} style={{height:75, width:'99.75%', alignSelf:'center', borderTopLeftRadius:30, borderTopRightRadius:30}}></Image>
-            <TouchableOpacity onPress={()=>navigation.navigate('Restaurant')}><Text style={{fontFamily:'B', marginHorizontal:'7.5%', fontSize:15, marginTop:'5%', color:'#FF8533', textAlign:'left'}}>{data.name}</Text></TouchableOpacity>
+            <Text style={{fontFamily:'B', marginHorizontal:'7.5%', fontSize:15, marginTop:'5%', color:'#FF8533', textAlign:'left'}}>{data.name}</Text>
             
             <View style={{display:'flex', flexDirection:'row', paddingBottom:'5%'}}><Text style={{fontFamily:'M', marginHorizontal:'10%', fontSize:12, marginTop:'0.5%', color:'#9C7569'}}>{data.type} • {data.price}</Text>
             <Rating
@@ -50,21 +50,14 @@ export default function Explore() {
     });
 
 
-    const [cowmilk,setCowMilk] = useState(false);
-    const [eggs,setEggs] = useState(false);
-    const [peanut,setPeanut] = useState(false);
-    const [fish,setFish] = useState(false);
-    const [wheat,setWheat] = useState(false);
-    const [soy,setSoy] = useState(false);
-    const [shellfish,setShellfish] = useState(false);
-    const [gluten,setGluten] = useState(false);
+   
       if (!fontLoaded) {
         return null;
       }
    
     return (
         <View style={styles.container}>
-            <ImageBackground source={require('../assets/vegandine.png')} style={{width:'100%', height:'70%', resizeMode:'contain'}}>
+           
             <View style={{ marginTop: '10%', marginHorizontal:'5%' }}>
                 <View style={{flexDirection:'row', display:'flex', width:350}}><Icon name="chevron-left" type="entypo" size={30} color="#FFF"></Icon>
                 
@@ -76,7 +69,7 @@ export default function Explore() {
             </View>
             
             
-            </ImageBackground>
+          
             <View style={{marginLeft:'7.5%', top:'30%', flexDirection:'row', display:'flex', overflow:'scroll', position:'absolute', zIndex:2}}>
                 <ScrollView horizontal style={{paddingBottom:'1.5%'}} showsHorizontalScrollIndicator={false}>
               {Restaurants}

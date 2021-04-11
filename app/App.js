@@ -8,6 +8,7 @@ import Signup from './src/screens/register';
 import Home from './src/screens/home';
 import Dine from './src/screens/dine';
 import Explore from './src/screens/explore';
+import Restaurant from './src/screens/restaurant';
 
 
 
@@ -49,6 +50,12 @@ function MyStack() {
         component={Explore} 
         options={{ headerShown: false}} 
       />
+      <Stack.Screen 
+        name="Restaurant" 
+        component={Restaurant} 
+        options={{ headerShown: false}} 
+      />
+    
     
      
       

@@ -76,13 +76,16 @@ export default function Dine() {
               {Restaurants}
                 </ScrollView>
             </View>
+            
+            </ImageBackground>
+            
             <Text style={{textAlign:'justify', color:"#FF8533",fontSize:20, fontFamily:'S', marginHorizontal:'10%', marginTop:'-5%'}} onPress={()=>navigation.navigate('Explore')}>Explore</Text>
             <Text style={{textAlign:'justify', color:"#9C7569",fontSize:15, fontFamily:'M', marginHorizontal:'10%'}}>Explore restaurants tailored to specific diets in your area</Text>
             <View style={{marginLeft:'7.5%', marginTop:'5%', flexDirection:'row', display:'flex', overflow:'scroll'}}>
                 <ScrollView horizontal style={{paddingBottom:'1.5%'}} showsHorizontalScrollIndicator={false}>
               <TouchableOpacity onPress={()=>console.log('Touch')}><View><Image source={require('../assets/fast.png')} style={{height:195, width:195, resizeMode:'contain'}}></Image></View></TouchableOpacity>
               <TouchableOpacity><Image source={require('../assets/organ.png')} style={{height:195, width:195, resizeMode:'contain'}}></Image></TouchableOpacity>
-              <TouchableOpacity><Image source={require('../assets/veg.png')} style={{height:200, width:200, resizeMode:'contain'}}></Image></TouchableOpacity>
+              <TouchableOpacity onPress={()=>navigation.navigate('Explore')}><Image source={require('../assets/veg.png')} style={{height:200, width:200, resizeMode:'contain'}}></Image></TouchableOpacity>
                 </ScrollView>
             </View>
             <View style={{flexDirection:'row', display:'flex', marginHorizontal:'5%'}}>
@@ -91,9 +94,6 @@ export default function Dine() {
             </View></TouchableOpacity>
             <Text style={{fontFamily:'B', textAlign:'center', fontSize:15, marginTop:'2.5%',color:'#FF8533', textDecorationStyle:'solid', textDecorationLine:'underline', marginLeft:'35%', marginTop:'15%'}} onPress={()=>navigation.navigate('Signup')}>or skip</Text>
            </View>
-            </ImageBackground>
-            
-            
 
           
             
