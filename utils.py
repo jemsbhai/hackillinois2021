@@ -47,8 +47,6 @@ def update_table_data(tableid, status, diet, allergy):
 def diff_dashtable(data, data_previous, row_id_name="tableid"):
 
     """Generate a diff of Dash DataTable data.
-    CREDIT: https://community.plotly.com/t/detecting-changed-cell-in-editable-datatable/26219/4
-
     Parameters
     ----------
     data: DataTable property (https://dash.plot.ly/datatable/reference)
@@ -58,8 +56,7 @@ def diff_dashtable(data, data_previous, row_id_name="tableid"):
 
     Returns
     -------
-    A list of dictionaries in form of [{row_id_name:, column_name:, current_value:,
-        previous_value:}]
+    A list of dictionaries of the changed rows
     """
     df, df_previous = pd.DataFrame(data=data), pd.DataFrame(data_previous)
     for _df in [df, df_previous]:

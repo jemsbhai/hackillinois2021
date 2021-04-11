@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+body, th, td {
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #FF8533;
+}
+
+#topbar{
+    height: 70px;
+    margin-top: 20px;
+}
+#icon {
+    position: relative;
+    width: 73px;
+    height: 69px;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: left;
+    display: inline;
+}
+#title {
+    position: relative;
+    display: inline;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 63px;
+    text-align: center;
+}
+#choropleth {
+    float: left;
+    width:48%;
+    padding-left:2%;
+}
+#restaurant-table {
+    float: right;
+    width: 49%;
+}
+th {
+    color: #FF8533;
+    font-family: Poppins;
+}
+td {
+    font-size:small;
+    --accent: #FF8533;
+    
+}
+#data-diff{
+    visibility:hidden
+}
