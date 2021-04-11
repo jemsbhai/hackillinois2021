@@ -86,10 +86,10 @@ export default function Home() {
             <Chip onPress={() =>{setGluten(!gluten)} } style={{width:'30%', marginRight:'2.5%', marginBottom:'2.5%', backgroundColor:"#FF8533"}} textStyle={{fontFamily:'S', fontSize:12, textAlign:'center'}} selectedColor="#FFF" selected={gluten}>Gluten</Chip>
             </View>
             <View style={{flexDirection:'row', display:'flex', marginHorizontal:'5%'}}>
-            <TouchableOpacity onPress={()=>navigation.navigate('#')}><View style={{marginTop:'25%', width:'90%', backgroundColor:'#FF8533', marginLeft:'10%', borderRadius:50, display:'flex', flexDirection:'row'}}>
+            <TouchableOpacity onPress={()=>navigation.navigate('Dine')}><View style={{marginTop:'25%', width:'90%', backgroundColor:'#FF8533', marginLeft:'10%', borderRadius:50, display:'flex', flexDirection:'row'}}>
                 <Text style={{fontFamily:'S', color:'#FFF', fontSize:15, textAlign:'center', marginLeft:'15%', marginVertical:'2.5%', textAlignVertical:'center', paddingVertical:'2.5%'}} >Next  </Text><Icon name="arrow-forward-circle" type="ionicon" color="#FFF" size={20} style={{textAlignVertical:'center', marginVertical:'50%'}}></Icon>
             </View></TouchableOpacity>
-            <Text style={{fontFamily:'B', textAlign:'center', fontSize:15, marginTop:'2.5%',color:'#FF8533', textDecorationStyle:'solid', textDecorationLine:'underline', marginLeft:'35%', marginTop:'10%'}} onPress={()=>navigation.navigate('Signup')}>or skip</Text>
+            <Text style={{fontFamily:'B', textAlign:'center', fontSize:15, marginTop:'2.5%',color:'#FF8533', textDecorationStyle:'solid', textDecorationLine:'underline', marginLeft:'35%', marginTop:'15%'}} onPress={()=>navigation.navigate('Signup')}>or skip</Text>
            </View>
             
 

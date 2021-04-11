@@ -6,6 +6,8 @@ import Welcome from './src/screens/welcome';
 import Signin from './src/screens/login';
 import Signup from './src/screens/register';
 import Home from './src/screens/home';
+import Dine from './src/screens/dine';
+import Explore from './src/screens/explore';
 
 
 
@@ -35,6 +37,16 @@ function MyStack() {
       <Stack.Screen 
         name="Home" 
         component={Home} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Dine" 
+        component={Dine} 
+        options={{ headerShown: false}} 
+      />
+      <Stack.Screen 
+        name="Explore" 
+        component={Explore} 
         options={{ headerShown: false}} 
       />
     
