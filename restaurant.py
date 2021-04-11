@@ -20,6 +20,7 @@ from plotly.offline import plot
 from utils import diff_dashtable, get_table_data, update_table_data
 
 app = dash.Dash(__name__)
+app.title = 'MerryDining - Restaurant Portal'
 statuses = ['empty', 'reserved', 'occupied']
 diets = ['none', 'vegan', 'vegetarian', 'gluten-free', 'kosher', 'halal']
 allergies = ['none', 'dairy', 'peanuts', 'soy', 'shellfish']
